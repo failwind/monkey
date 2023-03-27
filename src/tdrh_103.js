@@ -19,13 +19,13 @@
       for (const key in list) {
         if (Object.hasOwnProperty.call(list, key)) {
           const element = list[key];
-          console.log(element);
+          // console.log(element);
           if (element.name === "userID") {
             element.value = "kdinfo1";
           } else if (element.name === "userPWD") {
             element.value = "qwer1234";
           } else {
-            console.log("not match for element: ", element);
+            console.error("not match for element: ", element);
           }
         }
       }
